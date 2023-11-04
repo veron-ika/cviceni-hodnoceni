@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './style.css';
 
-const Star = () => {
+export const Star = () => {
   const [glowing, setGlowing] = useState(false);
   
   const starClass = glowing
@@ -12,5 +12,3 @@ const Star = () => {
     <div className={starClass}></div>
   );
 };
-
-export default Star;

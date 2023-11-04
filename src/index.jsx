@@ -1,12 +1,7 @@
-import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Rating from './Rating';
-import './style.css';
-
-const App = () => {
-  return <Rating />; 
-};
+import { HomePage } from './pages/HomePage';
+import './global.css';
 
 createRoot(
-  document.querySelector('#app')
-).render(<App />);
+  document.querySelector('#app'),
+).render(<HomePage />);

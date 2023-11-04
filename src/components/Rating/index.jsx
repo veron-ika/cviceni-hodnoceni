@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Star from '../Star';
+import { useState } from 'react';
+import { Star } from '../Star';
 import './style.css';
 
-const Rating = () => {
+export const Rating = () => {
   const [value, setValue] = useState(0);
   
   return (
@@ -18,5 +18,3 @@ const Rating = () => {
     </div>
   );
 };
-
-export default Rating;
